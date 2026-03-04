@@ -1,13 +1,49 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Narrow";
+  src: url("/fonts/arial-narrow.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Narrow";
+  --color-brat-album: #8ace00;
+  --color-brat-text: #000000;
+
+  --color-bratdeluxe-album: #ffffff;
+  --color-bratdeluxe-text: #000000;
+
+  --color-crash-album: #079bda;
+  --color-crash-text: #fd0000;
+
+  --color-howimfeelingnow-album: #ffffff;
+  --color-howimfeelingnow-text: #bfbfbf;
+
+  --color-charli-album: #908985;
+  --color-charli-text: #000000;
+
+  --color-pop2-album: #c9a2dd;
+  --color-pop2-text: #000000;
+
+  --color-number1angel-album: #d40001;
+  --color-number1angel-text: #fe0302;
+
+  --color-sucker-album: #f5abcd;
+  --color-sucker-text: #ffffff;
+
+  --color-trueromance-album: #700150;
+  --color-trueromance-text: #ffffff;
+
+  --color-vroomvroom-album: #000000;
+  --color-vroomvroom-text: #333333;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-zinc-200 dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
