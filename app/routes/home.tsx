@@ -1,5 +1,4 @@
 import { useState, useRef, useCallback, useEffect } from "react";
-import type { Route } from "./+types/home";
 import {
   TextAlignStart,
   TextAlignEnd,
@@ -8,13 +7,6 @@ import {
 } from "lucide-react";
 import FittedTextArea from "~/components/FittedTextArea";
 import { toPng } from "html-to-image";
-
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "brat generator" },
-    { name: "description", content: "generate unique brat album covers" },
-  ];
-}
 const albums = [
   { name: "brat", album: "#8ace00", text: "#000000" },
   { name: "brat deluxe", album: "#ffffff", text: "#000000" },
