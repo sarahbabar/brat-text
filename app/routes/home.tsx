@@ -137,7 +137,7 @@ export default function Home() {
           {albums.map((album, index) => (
             <button
               key={index}
-              className={`size-5 text-2xl flex justify-center items-center cursor-pointer blur-[0.5px] transition duration-200
+              className={`size-5 text-2xl flex justify-center items-center cursor-pointer blur-[0.25px] md:blur-[0.5px] transition duration-200
                 ${theme === index ? "scale-140" : "scale-100"}
               `}
               style={{ background: album.album, color: album.text }}
